@@ -33,8 +33,8 @@ def dataFrameFromDirectory(path, classification):
 
 data = DataFrame()
 
-data = data.append(dataFrameFromDirectory('C:/Users/ussocom/Desktop/New folder/enron1/spam', 'spam'))
-data = data.append(dataFrameFromDirectory('C:/Users/ussocom/Desktop/New folder/enron1/ham', 'ham'))
+data = data.append(dataFrameFromDirectory('.../enron1/spam', 'spam'))
+data = data.append(dataFrameFromDirectory('.../enron1/ham', 'ham'))
 
 classifier = MultinomialNB()
 vectorizer = CountVectorizer()
